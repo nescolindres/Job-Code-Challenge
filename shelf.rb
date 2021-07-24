@@ -15,10 +15,16 @@ $candyArray
   end
 
   def addElement (shelf , value)
-    @candyArray[shelf] = value #If i have the same index, im actually just appending the value.
+
+    @candyArray[shelf] = [value] #If i have the same index, im actually just appending the value.
   end                               #{"1" => ["candy", "coco"]  }
 
-  
+  def getArray
+  return @candyArray
+  end
 
+def appendElement (shelf, candy)
+ @candyArray[shelf] << candy
+end
 
 end

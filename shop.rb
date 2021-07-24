@@ -18,7 +18,14 @@ class Shop
   end
 
   def showStock
-
     puts @shelf.printArray
+  end
+
+  def getCandyArray
+    return @shelf.getArray
+  end
+
+  def addAdditionalCandy (shelf, candy)
+    @shelf.appendElement(shelf,candy)
   end
 end
