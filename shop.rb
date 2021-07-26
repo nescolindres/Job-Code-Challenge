@@ -28,4 +28,12 @@ class Shop
   def addAdditionalCandy (shelf, candy)
     @shelf.appendElement(shelf,candy)
   end
+
+  def removeShelf (shelfNumber)
+    @shelf.removeArray(shelfNumber)
+  end
+
+  def removeCandy (shelf, value)
+    @shelf.deleteElement(shelf, value)
+  end
 end
